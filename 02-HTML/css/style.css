@@ -1,0 +1,19 @@
+
+    header {
+        display:block;
+        clear:both;
+    }
+    header h1{
+        float: left;
+
+    }
+    header .logo{
+        display:inline-block;
+        float: right;
+        width:180px;
+        height:auto;
+    }
+    #content_wrapper{
+        display: block;
+        clear: both;
+    }

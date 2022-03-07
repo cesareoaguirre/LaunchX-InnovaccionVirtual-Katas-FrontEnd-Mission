@@ -1,0 +1,226 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<html>
+    <head>
+        <title>Happy Cake Shop</title>
+<!--Fuentes de imágenes -->
+<!--
+Velas
+    https://i.pinimg.com/736x/3d/67/09/3d6709c198833c1f511727d0aea06a0c.jpg
+    https://th.bing.com/th/id/OIP.n9teYc4aPz_TkvKPYwsKWwHaE8?pid=ImgDet&w=800&h=534&rs=1
+    https://wp-media.beliefnet.com/sites/355/2015/02/getting-older.jpg
+    https://static9.depositphotos.com/1177973/1089/i/450/depositphotos_10892037-stock-photo-beautiful-birthday-candles-on-green.jpg
+    https://th.bing.com/th/id/OIP.oWu0pPvCFpq9RkcwxvfNwgHaFA?pid=ImgDet&rs=1
+    https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/7ba0ee02-cc64-4da2-96fa-857bbd4b06c0.01ca3c7c3ecd09fa36b5eae8e676a966.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff
+    https://m.media-amazon.com/images/I/51rkcYE2AmL._AC_SL1024_.jpg
+    https://m.media-amazon.com/images/I/51OY0jyNjkL._AC_SL1024_.jpg
+    https://m.media-amazon.com/images/I/51v5JeDByJL._AC_SL1024_.jpg
+
+Sabores
+    https://i.pinimg.com/736x/ff/16/0e/ff160e07c7c942aa4bd04852b1671860.jpg
+
+-->
+    <style>
+        
+        @import url("css/style.css");
+
+        .inventario_sabores img{
+            float:right;
+            width:120px;
+            height: auto;
+            display:inline-block;
+        }
+        .elige_sabores dl{
+            float:left;
+        }
+        .datos_cliente label{
+            display:block;
+            clear:both;
+            float:left;
+        }
+        .datos_cliente input,.datos_cliente textarea{
+            display: block;
+            float:none;
+            clear:both;
+            margin:8px;
+        }
+        #pedido_pastel span{
+            display:block;
+            border-bottom: 1px solid gray;
+            margin:8px;
+            clear:both;
+        }
+        #pedido_pastel input.enviar{
+            display: block;
+            float:none;
+            clear:both;
+            margin:8px;
+
+
+        }
+        .inventario_adornos img{
+            width: 100px;
+            height:auto;
+        }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <H1>Happy Cacke Shop</H1>
+            <img class="logo" src="images/logo.jpeg">
+        </header>
+        <div id="content_wrapper">
+            <div id="inventario">
+                <span>
+                    <h2>Inventario</h2>
+                </span>
+                <span class="inventario_sabores">
+                    <h3>Bases para pastel</h3>
+                    <img class="" src="https://i.pinimg.com/736x/ff/16/0e/ff160e07c7c942aa4bd04852b1671860.jpg">
+                    <table>
+                        <tr>
+                            <th>Sabor</th>
+                            <th>Bases restantes</th>
+                        </tr>
+                        <tr>
+                            <td>Vainilla</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Strawberry</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisú</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Zanahoria</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Limón</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Mármol</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Red velvet</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>White raspberry</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate negro</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                </span>
+                <span class="inventario_adornos">
+                    <h3>Bases para pastel</h3>
+                    <table>
+                        <tr>
+                            <th>Adorno</th>
+                            <th>Muestra</th>
+                            <th>Cantidad restante</th>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://i.pinimg.com/736x/3d/67/09/3d6709c198833c1f511727d0aea06a0c.jpg"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://th.bing.com/th/id/OIP.n9teYc4aPz_TkvKPYwsKWwHaE8?pid=ImgDet&w=800&h=534&rs=1"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://wp-media.beliefnet.com/sites/355/2015/02/getting-older.jpg"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://static9.depositphotos.com/1177973/1089/i/450/depositphotos_10892037-stock-photo-beautiful-birthday-candles-on-green.jpg"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://th.bing.com/th/id/OIP.oWu0pPvCFpq9RkcwxvfNwgHaFA?pid=ImgDet&rs=1"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/7ba0ee02-cc64-4da2-96fa-857bbd4b06c0.01ca3c7c3ecd09fa36b5eae8e676a966.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://m.media-amazon.com/images/I/51rkcYE2AmL._AC_SL1024_.jpg"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://m.media-amazon.com/images/I/51OY0jyNjkL._AC_SL1024_.jpg"></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Vela 1</td>
+                            <td><img src="https://m.media-amazon.com/images/I/51v5JeDByJL._AC_SL1024_.jpg"></td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+
+                </span>
+            </div>
+            <div id="pedidos">
+                <span>
+                    <h2>Pedidos</h2>
+                </span>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tel</th>
+                        <th>e-mail</th>
+                        <th>sabores</th>
+                        <th>comentarios</th>
+                    </tr>
+                    <tr>
+                        <td>Juan topo</td>
+                        <td>55-555555</td>
+                        <td>cliente@servidor.com</td>
+                        <td>Tiramisu, Chocolate, raspberry, blueberry</td>
+                        <td>Quiero que diga "Feliz cumpleanios"</td>
+                    </tr>
+                    <tr>
+                        <td>Juan topo</td>
+                        <td>55-555555</td>
+                        <td>cliente@servidor.com</td>
+                        <td>Tiramisu, Chocolate, raspberry, blueberry</td>
+                        <td>Quiero que diga "Feliz cumpleanios"</td>
+                    </tr>
+                    <tr>
+                        <td>Juan topo</td>
+                        <td>55-555555</td>
+                        <td>cliente@servidor.com</td>
+                        <td>Tiramisu, Chocolate, raspberry, blueberry</td>
+                        <td>Quiero que diga "Feliz cumpleanios"</td>
+                    </tr>
+                    <tr>
+                        <td>Juan topo</td>
+                        <td>55-555555</td>
+                        <td>cliente@servidor.com</td>
+                        <td>Tiramisu, Chocolate, raspberry, blueberry</td>
+                        <td>Quiero que diga "Feliz cumpleanios"</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<html>
+    <head>
+        <title>Happy Cake Shop</title>
+<!--Fuentes de imágenes -->
+<!--
+Velas
+    https://i.pinimg.com/736x/3d/67/09/3d6709c198833c1f511727d0aea06a0c.jpg
+    https://th.bing.com/th/id/OIP.n9teYc4aPz_TkvKPYwsKWwHaE8?pid=ImgDet&w=800&h=534&rs=1
+    https://wp-media.beliefnet.com/sites/355/2015/02/getting-older.jpg
+    https://static9.depositphotos.com/1177973/1089/i/450/depositphotos_10892037-stock-photo-beautiful-birthday-candles-on-green.jpg
+    https://th.bing.com/th/id/OIP.oWu0pPvCFpq9RkcwxvfNwgHaFA?pid=ImgDet&rs=1
+    https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/7ba0ee02-cc64-4da2-96fa-857bbd4b06c0.01ca3c7c3ecd09fa36b5eae8e676a966.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff
+    https://m.media-amazon.com/images/I/51rkcYE2AmL._AC_SL1024_.jpg
+    https://m.media-amazon.com/images/I/51OY0jyNjkL._AC_SL1024_.jpg
+    https://m.media-amazon.com/images/I/51v5JeDByJL._AC_SL1024_.jpg
+
+Sabores
+    https://i.pinimg.com/736x/ff/16/0e/ff160e07c7c942aa4bd04852b1671860.jpg
+
+-->
+    <style>
+        @import url("css/style.css");
+        .elige_sabores img{
+            float:right;
+            width:320px;
+            height: auto;
+            display:inline-block;
+        }
+        .elige_sabores dl{
+            float:left;
+        }
+        .datos_cliente label{
+            display:block;
+            clear:both;
+            float:left;
+        }
+        .datos_cliente input,.datos_cliente textarea{
+            display: block;
+            float:none;
+            clear:both;
+            margin:8px;
+        }
+        #pedido_pastel span{
+            display:block;
+            border-bottom: 1px solid gray;
+            margin:8px;
+            clear:both;
+        }
+        #pedido_pastel input.enviar{
+            display: block;
+            float:none;
+            clear:both;
+            margin:8px;
+
+
+        }
+        dl dd  label img{
+            width: 100px;
+            height:auto;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <header>
+            <H1>Happy Cacke Shop</H1>
+            <img class="logo" src="images/logo.jpeg">
+        </header>
+        <div id="content_wrapper">
+            <form id="pedido_pastel">
+                <span>
+                    <h2>Crea tu pastel</h2>
+                    <p>Cada sabor será un piso de tu pastel.</p>
+                </span>
+                <span class="elige_sabores">
+                    <dl class="">
+                        <dt>Sabores</dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_vainilla">Vainilla</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_strawberry">Strawberry</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_tiramisu">Tiramisú</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_zanahoria">Zanahoria</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_limon">Limón</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_marmol">Mármol</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_red_velvet">Red velvet</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_white_raspberry">White raspberry</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_psitache">Pistache</label></dd>
+                        <dd><label><input type="checkbox" id="sabor" value="sabor_chocolate">Chocolate negro</label></dd>
+                    </dl>
+                    <img class="" src="https://i.pinimg.com/736x/ff/16/0e/ff160e07c7c942aa4bd04852b1671860.jpg">
+                </span>
+                <span class="elige_adornos">
+                    <h2>Adornos para tu pastel</h2>
+                    <dl class="">
+                        <dt>Velas</dt>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://i.pinimg.com/736x/3d/67/09/3d6709c198833c1f511727d0aea06a0c.jpg"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://th.bing.com/th/id/OIP.n9teYc4aPz_TkvKPYwsKWwHaE8?pid=ImgDet&w=800&h=534&rs=1"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://wp-media.beliefnet.com/sites/355/2015/02/getting-older.jpg"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://static9.depositphotos.com/1177973/1089/i/450/depositphotos_10892037-stock-photo-beautiful-birthday-candles-on-green.jpg"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://th.bing.com/th/id/OIP.oWu0pPvCFpq9RkcwxvfNwgHaFA?pid=ImgDet&rs=1"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/7ba0ee02-cc64-4da2-96fa-857bbd4b06c0.01ca3c7c3ecd09fa36b5eae8e676a966.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://m.media-amazon.com/images/I/51rkcYE2AmL._AC_SL1024_.jpg"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://m.media-amazon.com/images/I/51OY0jyNjkL._AC_SL1024_.jpg"></label></dd>
+                        <dd><label><input type="checkbox" id="adorno" value="vela_"><img src="https://m.media-amazon.com/images/I/51v5JeDByJL._AC_SL1024_.jpg"></label></dd>
+
+                        
+                    </dl>
+
+                </span>
+                <span class="datos_cliente">
+                    <h3>Datos del cliente</h3>
+                    <p>Deje sus datos para que podamos contactarlo</p>
+                    <label for="nombre">Nombre<input type="text" name="nombre"></label>
+                    <label for="tel">Teléfono<input type="tel" name="tel"></label>
+                    <label for="email">e-mail<input type="email" name="email"></label>
+                    <label for="comentarios">Comentarios de su pastel<textarea name="comentarios"></textarea></label>
+                </span>
+                <span>
+                    <input class="enviar" type="submit" value="Hacer pedido">
+                </span>
+            </form>
+        </div>
+
+    </body>
+</html>
