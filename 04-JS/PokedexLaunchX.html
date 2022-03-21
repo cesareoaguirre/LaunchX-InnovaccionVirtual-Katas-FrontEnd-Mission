@@ -11,6 +11,10 @@
         <div id="main">
             <div id="pokedex-app">
                 <h1>Pokedex LaunchX</h1>
+                <div id="pokedex-search">
+                    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+                    <button onclick="consultaPokedex()">Buscar Pokemón</button>
+                </div> <!-- pokedex-search -->
                 <div id="pokedex-screen">
                         <div id="sprites">
                             <img id="poke-img" src="./img/pokeball.png" alt="Pokemon" width="150px">
@@ -37,10 +41,6 @@
                             </dl>
                         </div><!-- moves -->
                 </div><!-- pokedex-screen -->
-                <div id="pokedex-search">
-                    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
-                    <button onclick="consultaPokedex()">Buscar Pokemón</button>
-                </div> <!-- pokedex-search -->
             </div><!-- pokedex-app -->
         </div><!-- main -->
     </body>

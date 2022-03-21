@@ -7,7 +7,7 @@
     height: calc( 100% - 0px );
     max-width: 320px;
     min-height: 480px;
-    max-height: 480px;
+    /*max-height: 480px;*/
     background-color: red;
     border-radius: 10px;
     margin: 0px;
@@ -24,7 +24,7 @@
 }
 #pokedex-screen {
     width: 280px;
-    height: 180px;
+    height: auto;
     display: block;
     margin: 6px auto;
     border: 1px solid black;
@@ -51,8 +51,17 @@
 
 #pokedex-screen #stats{
     clear:both;
-
 }
+#pokedex-screen dd {
+    display: inline-block;
+    font-size: .95em;
+    text-transform: capitalize;
+    margin: auto 8px;
+}
+#pokedex-screen dt {
+    font-weight: 900;
+}
+
 #pokedex-screen #sprites img {
     display: flex;
     margin: auto;
@@ -60,7 +69,25 @@
     max-width: 100px;
     height: auto;
     background: transparent;
+}   
+
+#pokedex-search {
+    width: 280px;
+    margin: auto;
+    border: 1px solid black;
 }
+
+
+#pokedex-search input {
+    width: 96%;
+    margin: 4px 2%;
+}
+#pokedex-search button {
+    height: 32px;
+    width: 50%;
+    margin: auto 2%;
+}
+
 
 #description h2{
     margin: auto;
