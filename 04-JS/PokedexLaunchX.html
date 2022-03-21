@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <link rel="stylesheet" href="css/pokedex.css">
+        <title>Pokedex LaunchX</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="pokedex-app">
+                <h1>Pokedex LaunchX</h1>
+                <div id="pokedex-screen">
+                        <div id="sprites">
+                            <img id="poke-img" src="./img/pokeball.png" alt="Pokemon" width="150px">
+                        </div><!-- sprites-->
+                        <div id="description">
+                            <h2 id="poke-nombre"></h2>
+                            <h3 id="poke-tipo"></h3>
+                        </div><!-- description -->
+                        <div id="stats">
+                            <dl id="poke-stats-list">
+                                <dt>
+
+                                </dt>
+                            </dl>
+                        </div><!-- stat -->
+                        <div id="moves">
+                            <div>
+
+                            </div>
+                            <dl id="poke-moves-list">
+                                <dt>
+
+                                </dt>
+                            </dl>
+                        </div><!-- moves -->
+                </div><!-- pokedex-screen -->
+                <div id="pokedex-search">
+                    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+                    <button onclick="consultaPokedex()">Buscar Pokemón</button>
+                </div> <!-- pokedex-search -->
+            </div><!-- pokedex-app -->
+        </div><!-- main -->
+    </body>
+    <footer>
+        <script src="./js/PokedexLaunchx.js"></script>
+    </footer>
+</html>
